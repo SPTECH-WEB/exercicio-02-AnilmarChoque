@@ -5,8 +5,8 @@ import org.springframework.stereotype.Service;
 @Service("expressa")
 public class EntregaExpressa implements EntregaStrategy {
     @Override
-    public double calcularEntrega(double peso, double distancia) {
-        return (peso * 0.3 + distancia * 0.8) + 20;
+    public double calcularEntrega(double peso) {
+        return (peso * 0.30) + 10;
     }
     @Override
     public String modalidade() {

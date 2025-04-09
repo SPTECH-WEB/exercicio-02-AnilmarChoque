@@ -6,8 +6,8 @@ import org.springframework.stereotype.Service;
 public class TransportadoraTerceirizada implements EntregaStrategy {
 
     @Override
-    public double calcularEntrega(double peso, double distancia) {
-        return (peso * 0.2 + distancia);
+    public double calcularEntrega(double peso) {
+        return (peso * 0.20) + 5;
     }
 
     @Override

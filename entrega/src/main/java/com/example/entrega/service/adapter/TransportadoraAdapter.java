@@ -12,8 +12,8 @@ public class TransportadoraAdapter implements EntregaStrategy {
         this.externaAPI = new TransportadoraExternaAPI();
     }
 
-    public double calcularEntrega(double peso, double distancia) {
-        return externaAPI.calcular(peso, distancia);
+    public double calcularEntrega(double peso) {
+        return externaAPI.calcular(peso);
     }
 
     public String modalidade(){

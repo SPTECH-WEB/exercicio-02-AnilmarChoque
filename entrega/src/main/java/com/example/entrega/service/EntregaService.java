@@ -13,11 +13,11 @@ public class EntregaService {
         this.strategies = strategies;
     }
 
-    public double calcular(String modalidade, double peso, double distancia) {
+    public double calcular(String modalidade, double peso) {
         return strategies.stream()
                 .filter(e -> e.modalidade().equalsIgnoreCase(modalidade))
                 .findFirst()
                 .orElseThrow(() -> new IllegalArgumentException("Tipo de Frete inválido"))
-                .calcularEntrega(peso, distancia);
+                .calcularEntrega(peso);
     }
 }

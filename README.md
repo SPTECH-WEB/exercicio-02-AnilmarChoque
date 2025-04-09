@@ -45,9 +45,9 @@ adapter/
 
 ## 🚀 Como Usar
 
-1. Envie uma requisição HTTP com a modalidade de entrega, o peso do produto e a distancia:
+1. Envie uma requisição HTTP com a modalidade de entregae e o peso do produto:
    ```
-   GET /entrega?modalidade=expressa&peso=10&distancia=150
+   GET /entrega?modalidade=expressa&peso=10
    ```
 
 2. A aplicação irá:
@@ -59,7 +59,7 @@ adapter/
 ## 📈 Exemplo de Resultado
 
 ```cmd
-  Valor do frete: R$ 76.0
+  Valor do frete: R$ 12.5
 ```
 
 ---

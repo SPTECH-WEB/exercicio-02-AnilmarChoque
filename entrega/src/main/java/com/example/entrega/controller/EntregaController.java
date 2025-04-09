@@ -14,8 +14,8 @@ public class EntregaController {
     }
 
     @GetMapping
-    public ResponseEntity<String> calcular(@RequestParam String modalidade, @RequestParam double peso, @RequestParam double distancia) {
-        double valor = entregaService.calcular(modalidade, peso, distancia);
+    public ResponseEntity<String> calcular(@RequestParam String modalidade, @RequestParam double peso) {
+        double valor = entregaService.calcular(modalidade, peso);
         return ResponseEntity.ok("Valor do frete: R$ " + valor);
     }
 }
