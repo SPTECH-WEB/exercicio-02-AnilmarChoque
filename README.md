@@ -58,7 +58,7 @@ adapter/
 
 ## 📈 Exemplo de Resultado
 
-```json
+```cmd
   Valor do frete: R$ 76.0
 ```
 
